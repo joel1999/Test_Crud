@@ -19,7 +19,6 @@ if(isset($_POST['submit'])) {
     $Email = $_POST['Email'];
 
     $sql = "UPDATE testklanten SET Naam='$Naam',Achternaam='$Achternaam',Email='$Email' WHERE Id=$Id";
-    echo"$sql";
     $result = mysqli_query($db, $sql);
 
     if ($result) {
